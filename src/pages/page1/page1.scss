@@ -1,3 +1,40 @@
-page-page1 {
+/*Variabelen*/
+$primary-color: red;
+$text-color: white;
+$whitIngy: #F9AFB0;
 
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+h1{
+	color:$primary-color;
+	text-align:center;	
+	position: relative;
+	top:10%;
+}
+label{
+	color:$primary-color;
+	font-weight: bold;
+	text-align: center;
+	position: relative;
+	top: 60%;
+}
+#footer{
+	background:$primary-color;
+}
+
+page-page1 {
+	#ScanStore{
+		background:$primary-color;
+		color:$text-color;
+		font-weight: bold;
+		font-size:30px;
+		padding:10%;
+		@include centerer;
+	}
+	
 }

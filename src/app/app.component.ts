@@ -14,7 +14,7 @@ import { Page4 } from '../pages/page4/page4';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = Page2;
+  rootPage: any = Page1;
 
   pages: Array<{title: string, component: any}>;
 

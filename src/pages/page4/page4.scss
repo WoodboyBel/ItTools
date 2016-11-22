@@ -1,3 +1,41 @@
+/*Variabelen*/
+$primary-color: red;
+$text-color: white;
+$whitIngy: #F9AFB0;
+
+@mixin centerer {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#ScanKlantenKaart{
+	background: $primary-color;
+	color: $text-color;
+	font-weight: bold;
+	font-size:30px;
+	padding:10%;
+	text-align:center;
+	margin: 25% 15%;	
+	margin-bottom:10%;
+	position: relative;
+	top:5%;
+}
+h3{
+	color:$primary-color;
+	text-weight: bold;
+	text-align: center;
+}
+#Verdergaan{
+	background: $primary-color;
+	color: $text-color;
+	font-weight: bold;
+	font-size:30px;
+	padding:2% 10%;
+	text-align:center;
+	@include centerer;
+}
 page-page4 {
 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
+import {BarcodeScanner} from 'ionic-native';
 
 @Component({
   selector: 'page-page4',
@@ -35,4 +36,13 @@ export class Page4 {
       item: item
     });
   }
+
+  ScanKaart(){
+        console.log("Test fired");
+        BarcodeScanner.scan().then((barcodeData) => {
+            console.log(barcodeData);
+        }, (err) => {
+            console.error(err);
+        });
+}
 }

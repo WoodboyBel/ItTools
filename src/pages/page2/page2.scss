@@ -1,3 +1,54 @@
-page-page2 {
+/*Variabelen*/
+$primary-color: red;
+$text-color: white;
+$whitIngy: #F9AFB0;
 
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.productInfo{
+		color:$primary-color;
+		font-weight:bold;
+		text-align: left;
+		font-size: 20px;
+		position: relative;
+		top:-10%;
+	}
+	h1{
+		color: $primary-color;
+		font-weight: bold;
+		text-align: center;
+	}
+	#ScanProduct{
+		background: $primary-color;
+		color: $text-color;
+		font-weight: bold;
+		font-size:30px;
+		padding:10%;
+		text-align:center;
+		margin: 25% 15%;
+		position: relative;
+		top:5%;
+	}
+	#ScantNiet{
+		background: $primary-color;
+		color: $text-color;
+		font-weight: bold;
+		font-size:20px;
+		padding: 3%;
+		position: absolute;
+  		bottom: 5%;
+ 		left: 50%;
+ 		transform: translate(-50%, -50%);
+	}
+	label{
+		
+	}
+
+page-page2 {
+	
 }

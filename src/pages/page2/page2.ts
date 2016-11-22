@@ -1,6 +1,15 @@
 import { Component } from '@angular/core';
 
 import { NavController, NavParams } from 'ionic-angular';
+import {BarcodeScanner} from 'ionic-native';
+
+
+
+
+var result;
+
+
+
 
 @Component({
   selector: 'page-page2',
@@ -34,5 +43,23 @@ export class Page2 {
     this.navCtrl.push(Page2, {
       item: item
     });
+  }
+         
+
+
+
+  ScanCode(){
+        result=BarcodeScanner.scan();
+        console.log("Test fired");
+        BarcodeScanner.scan().then((barcodeData) => {
+            console.log(barcodeData);
+        }, (err) => {
+            console.error(err);
+        });
+
+}
+  scannen(){
+  result= BarcodeScanner.scan();
+  return result;
   }
 }
