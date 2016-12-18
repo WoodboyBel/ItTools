@@ -31,8 +31,8 @@ $whitIngy: #F9AFB0;
 		padding:10%;
 		text-align:center;
 		margin: 25% 15%;
-		position: relative;
-		top:5%;
+		//position: relative;
+		//top:5%;
 	}
 	#ScantNiet{
 		background: $primary-color;
@@ -42,13 +42,32 @@ $whitIngy: #F9AFB0;
 		padding: 3%;
 		position: absolute;
   		bottom: 5%;
- 		left: 50%;
+ 		  left: 50%;
  		transform: translate(-50%, -50%);
 	}
 	label{
-		
+		display: block;
 	}
+  .labelInfo{
+    display: block;
+    text-align: left;
+  }
+  .labelGegevenInfo{
+    width: 100%;
+    display: block;
+    text-align: right;
+  }
+.gegevensTable{
+  margin: auto;
+  font-size: 150%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
+}
+.rijen{
+  margin-top: 10%;
+}
 
 page-page2 {
-	
+
 }

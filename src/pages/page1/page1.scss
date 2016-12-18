@@ -12,7 +12,7 @@ $whitIngy: #F9AFB0;
 
 h1{
 	color:$primary-color;
-	text-align:center;	
+	text-align:center;
 	position: relative;
 	top:10%;
 }
@@ -22,9 +22,6 @@ label{
 	text-align: center;
 	position: relative;
 	top: 60%;
-}
-#footer{
-	background:$primary-color;
 }
 
 page-page1 {
@@ -36,5 +33,5 @@ page-page1 {
 		padding:10%;
 		@include centerer;
 	}
-	
+
 }

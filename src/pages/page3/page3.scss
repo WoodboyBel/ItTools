@@ -5,27 +5,32 @@ $background-color: #E4121B;
 $whitIngy: #F9AFB0;
 
 page-page3 {
-	h1{
-		color: $primary-color;
-		font-weight: bold;
-		text-align: center;
-	}
-	h3{
-		color:$primary-color;
-		text-weight: bold;
-		position: absolute;
-  		bottom: 15%;
-  		left: 15%;
-	}
-	#Afrekenen{
+  h1{
+    color:$primary-color;
+    text-align:center;
+    position: relative;
+    top:10%;
+  }
+	  h3{
+	  	color:$primary-color;
+	  	text-weight: bold;
+	  	position: relative;
+    		bottom: 15%;
+     		left: 15%;
+	  }
+	  #Afrekenen{
 		background: $primary-color;
 		color: $text-color;
 		font-weight: bold;
 		font-size:20px;
-		padding: 3% 20%;
-		position: absolute;
-  		bottom: 5%;
- 		left: 50%;
- 		transform: translate(-50%, -50%);
+		padding: 3% 15%;
+      position: relative;
+      top: 10px;
+    margin: auto;
+
+ 		transform: translate(50%, -50%);
 	}
+  .plijst{
+
+  }
 }
