@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
 import { ProductLijst } from './ProductList';
 import { NFC } from 'ionic-native';
-//, Ndef
 
-//import {ModalController, NavController} from "ionic-angular";
-
+//opstellen van de html tag samen met de inhoud ervan
 
 @Component({
   selector: 'page-page3',
@@ -34,18 +32,29 @@ import { NFC } from 'ionic-native';
 `
 })
 export class Page3 {
+
+  //declareren variabelen
   productlijst;
   total=0;
   testString="Hello NFC";
+
+
+  //binden van variabelen met een export klasse/ export variabelen
 
   constructor(){
     this.productlijst = ProductLijst;
     this.total=0;
   }
+
+  //fucntie voor de totaal prijs te berekenen en terug te geven
+
   totaal = function (prijs) {
     this.total = this.total + prijs;
     return this.total;
   }
+
+  //functie voor het verzenden van de array met gescande producten (in dit geval een hardcoded list omdat de http post niet werkt) over nfc
+
   SendBill=function() {
     //let message = Ndef.textRecord('Hello world');
     //NFC.share([message]).then(onSuccess).catch(onError);

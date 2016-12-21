@@ -106,3 +106,11 @@ export let ProductLijst={
     }
   ]
 }
+export class ProductList {
+  name: string;
+  ean: string;
+  price: number;
+  constructor(_name: string, _ean: string, _price: number) {
+    // assign local variables to class members
+  }
+}
